@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OAuth</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>OAuth</h1>
+      <div id="loginBtn_container">
+        <button id="kakao">카카오 로그인</button>
+        <button id="naver">네이버 로그인</button>
+        <button id="google">구글 로그인</button>
+      </div>
+      <main id="userinfo_container">
+        <img id="user_img" />
+        <div>유저 이름 : <span id="user_name"></span></div>
+        <button id="logout_button">로그아웃</button>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
