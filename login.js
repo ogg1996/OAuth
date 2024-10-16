@@ -24,17 +24,17 @@ let googleAccessToken = "";
 
 kakaoLoginBtn.onclick = () => {
   localStorage.setItem("curOAuthServie", "kakao");
-  location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${kakaoClientId}&redirect_uri=${redirectURI}&response_type=code`;
+  location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 };
 
 naverLoginBtn.onclick = () => {
   localStorage.setItem("curOAuthServie", "naver");
-  location.href = `https://nid.naver.com/oauth2.0/authorize?client_id=${naverClientId}&response_type=code&redirect_uri=${redirectURI}&state=${naverState}`;
+  location.href = `https://nid.naver.com/oauth2.0/authorize?client_id=${NAVER_CLIENT_ID}&response_type=code&redirect_uri=${REDIRECT_URI}&state=${NAVER_STATE}`;
 };
 
 googleLoginBtn.onclick = () => {
   localStorage.setItem("curOAuthServie", "google");
-  location.href = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${googleClientId}&redirect_uri=${redirectURI}&response_type=code&scope=profile%20email`;
+  location.href = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${GOOGLE_CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code&scope=profile%20email`;
 };
 
 logoutBtn.onclick = () => {
